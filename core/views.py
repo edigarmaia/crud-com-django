@@ -25,3 +25,9 @@ def atualizar(request, id):
     pessoa.save()
 
     return redirect(home)
+
+
+def deletar(request, id):
+    pessoa = Pessoa.objects.get(id = id)
+    pessoa.delete()
+    return redirect(home)

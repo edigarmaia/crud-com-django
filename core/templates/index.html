@@ -7,5 +7,15 @@
 </head>
 <body>
     Hello World!
+
+    <ul>
+
+        {% for pessoa in pessoas %}
+        <li> {{ pessoa.id}} - {{ pessoa.nome}} </li>
+        {% endfor %}
+
+    </ul>
+
+
 </body>
 </html>
